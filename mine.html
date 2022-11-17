@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,26 +29,42 @@
         <a class="nav--header" href="#">our service</a>
         <a class="nav--header" href="#">tour package</a>
       </nav>
+      <div class="burgerMenu">
+        <img src="images/burgerMenu.svg" alt="burger icon" />
+      </div>
     </header>
-    <div class="banner">
-      <div>
-        <img src="images/Left side arrow.svg" alt="left side arrow" />
-      </div>
-      <div class="banner--content">
-        <div class="price">
-          <img class="price--text--bg" src="images/Layer 2.svg" alt="" />
-          <p class="price--text">From $199/Person</p>
+    <section class="banner">
+      <div class="banner--bg--image">
+        <div class="banner--arrow--icon">
+          <img src="images/Left side arrow.svg" alt="left side arrow" />
         </div>
+        <div class="banner--content">
+          <div class="price">
+            <img class="price--text--bg" src="images/Layer 2.svg" alt="" />
+            <p class="price--text">From $199/Person</p>
+          </div>
 
-        <h1 class="banner--title">Discover Greece</h1>
-        <p class="banner--paragraph">travel with unique experience</p>
+          <h1 class="banner--title">Discover Greece</h1>
+          <p class="banner--paragraph">travel with unique experience</p>
+        </div>
+        <div class="banner--arrow--icon">
+          <img src="images/Rigth side arrow.svg" alt="left side arrow" />
+        </div>
       </div>
-      <div>
-        <img src="images/Rigth side arrow.svg" alt="left side arrow" />
+    </section>
+    <section class="services">
+      <div class="service--text">
+        <h4 class="service--subTitle">discover</h4>
+        <h3 class="service--title">Our Hot Services</h3>
+        <img src="images/Shape blue.svg" alt="shape icon" />
+        <p class="service--paragraph">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard
+        </p>
       </div>
-    </div>
-    <div class="services"></div>
-    <div class="video--tour">
+      <div class="service--content" id="serviceContent"></div>
+    </section>
+    <section class="video--tour">
       <div class="video--black">
         <div class="video--text">
           <p class="video--text--paragraph">discover</p>
@@ -55,16 +72,17 @@
           <img src="images/Shape 1.svg" alt="" />
         </div>
         <div class="video--container">
-          <img src="images/Clip.png" alt="" />
-          <div class="pause--icone">
-            <img src="images/Forma 1.svg" />
-          </div>
+          <iframe
+            class="video--frame"
+            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
       <div class="video--progress"></div>
-    </div>
+    </section>
 
-    <div class="achievement">
+    <article class="achievement">
       <div class="achived">
         <img src="images/star-icon.svg" alt="star-icon" />
         <h3 class="achived--title">120,859</h3>
@@ -85,9 +103,9 @@
         <h3 class="achived--title">978</h3>
         <p class="achived--paragraph">hotels $ resorts</p>
       </div>
-    </div>
+    </article>
 
-    <div class="popular--package">
+    <section class="popular--package">
       <div class="text">
         <p class="text--paragraph">we offer</p>
         <h2 class="text--title">Popular Tour Package</h2>
@@ -134,8 +152,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="subscribe">
+    </section>
+    <section class="subscribe">
       <div class="subscribe--inner">
         <div class="subscribe--text">
           <h3 class="subscribe--text--title">
@@ -154,8 +172,8 @@
           <input class="subscribe--btn" type="button" value="subscribe" />
         </div>
       </div>
-    </div>
-    <div class="coments">
+    </section>
+    <article class="coments">
       <div class="text">
         <p class="text--paragraph">our smiles</p>
         <h2 class="text--title">Happy Travelers</h2>
@@ -202,14 +220,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="planeTrip">
+    </article>
+    <section class="planeTrip">
       <div class="planeTrip--inner">
         <h3 class="planeTrip--title">Ready to plan your trip?</h3>
         <input class="planeTrip--btn" type="button" value="book now" />
       </div>
-    </div>
-    <div class="destination">
+    </section>
+    <section class="destination">
       <div class="text">
         <p class="text--paragraph">destination</p>
         <h2 class="text--title">Popular Tourism Countries</h2>
@@ -217,7 +235,11 @@
       </div>
       <div class="destination--content">
         <div class="destination--content--inner">
-          <img src="images/thailand.png" alt="thailand" />
+          <img
+            class="destination--place--image"
+            src="images/thailand.png"
+            alt="thailand"
+          />
           <div class="destination--bg">
             <div class="content--inner">
               <div>
@@ -225,13 +247,21 @@
                 <p class="destination--price">$900 - $1900</p>
               </div>
               <div class="destination--icon--container">
-                <img src="images/arrow_icon.svg" alt="arrow icon" />
+                <img
+                  class="destination--image"
+                  src="images/arrow_icon.svg"
+                  alt="arrow icon"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="destination--content--inner">
-          <img src="images/Italy.png" alt="Italy" />
+          <img
+            class="destination--place--image"
+            src="images/Italy.png"
+            alt="Italy"
+          />
           <div class="destination--bg">
             <div class="content--inner">
               <div>
@@ -245,7 +275,11 @@
           </div>
         </div>
         <div class="destination--content--inner">
-          <img src="images/indonesia.png" alt="indonesia" />
+          <img
+            class="destination--place--image"
+            src="images/indonesia.png"
+            alt="indonesia"
+          />
           <div class="destination--bg">
             <div class="content--inner">
               <div>
@@ -259,7 +293,11 @@
           </div>
         </div>
         <div class="destination--content--inner">
-          <img src="images/singapore.png" alt="singapore" />
+          <img
+            class="destination--place--image"
+            src="images/singapore.png"
+            alt="singapore"
+          />
           <div class="destination--bg">
             <div class="content--inner">
               <div>
@@ -273,12 +311,43 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="map"></div>
+    </section>
+    <figure class="map" id="googleMap">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="100%"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><br /><style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 100%;
+              width: 100%;
+            }
+          </style>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 100%;
+              width: 100%;
+            }
+          </style>
+        </div>
+      </div>
+    </figure>
     <footer>
       <div class="footer--container">
         <div class="footer--column">
-          <div>
+          <div class="footer--column--inner">
             <h3 class="footer--title">Quick Links</h3>
             <ul class="column">
               <li><a class="footer--list" href="#">Home</a></li>
@@ -334,4 +403,5 @@
       <h4 class="--text">trourism©All Rights Reserved</h4>
     </div>
   </body>
+  <script src="js/app.js"></script>
 </html>

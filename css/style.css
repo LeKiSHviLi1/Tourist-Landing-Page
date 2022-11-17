@@ -20,7 +20,9 @@ header {
   text-transform: uppercase;
   margin-right: 48px;
 }
-
+.burgerMenu {
+  display: none;
+}
 .banner {
   width: 100%;
   height: 568px;
@@ -30,6 +32,13 @@ header {
     rgba(8, 174, 234, 1) 0%,
     rgba(42, 245, 152, 0.6474964985994398) 100%
   );
+}
+.banner--bg--image {
+  width: 100%;
+  height: 100%;
+  background-image: url('/Tourist-Landing-Page/images/DiscoverBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 95px;
   display: flex;
   justify-content: space-between;
@@ -70,11 +79,64 @@ header {
 .services {
   width: 100%;
   height: 804px;
+  padding: 80px 92px 0;
+  display: flex;
+}
+
+.service--text {
+  width: 20%;
+}
+.service--subTitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #8d8d8d;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.service--title {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #1a1a1b;
+  margin-bottom: 8px;
+}
+.service--paragraph {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #8d8d8d;
+}
+.service--content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.service--content--title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #1a1a1b;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.service--content--paragraph {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #8d8d8d;
+  width: 270px;
+  margin-bottom: 32px;
 }
 .video--tour {
   width: 100%;
   height: 504px;
-  background-image: url('/images/clipBg.png');
+  background-image: url('/Tourist-Landing-Page/images/clipBg.png');
   background-repeat: no-repeat;
   background-position: 10% 90%;
   background-size: cover;
@@ -82,8 +144,13 @@ header {
 .video--black {
   width: 100%;
   height: 504px;
-  background-color: #000;
-  opacity: 0.8;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.7987570028011204)
+  );
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,6 +185,19 @@ header {
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  opacity: 1;
+}
+.video--frame {
+  width: 100%;
+  height: 100%;
+  height: 314px;
+  left: 0px;
+  top: 0px;
+}
+.video-stream html5-main-video {
+  width: 100%;
+  height: 314px;
+  left: 0px;
 }
 .pause--icone {
   position: absolute;
@@ -143,6 +223,7 @@ header {
   align-items: center;
 }
 .achived {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,17 +283,20 @@ header {
 
 .package {
   display: flex;
-  justify-content: space-between;
-  width: 860px;
+  justify-content: space-evenly;
+  padding: 0 72px 0;
+  width: 100%;
 }
 .package--container {
-  width: 267px;
-  height: 358px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  height: auto;
+  padding: 0 0 24px;
+  width: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .image--container {
   position: relative;
 }
+
 .package--type {
   position: absolute;
   left: 10px;
@@ -247,7 +331,7 @@ header {
 .subscribe {
   width: 100%;
   height: 350px;
-  background-image: url('/images/subscribeBgImage.png');
+  background-image: url('/Tourist-Landing-Page/images/subscribeBgImage.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -293,7 +377,7 @@ header {
   border-radius: 25px;
   background-color: transparent;
   border: 2px solid #fff;
-  padding: 16px 30px;
+  padding: 16px 32px;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -322,7 +406,7 @@ header {
 .coments {
   width: 100%;
   height: 625px;
-  padding: 72px 95px;
+  padding: 72px 145px;
 }
 
 .coments--inner {
@@ -360,14 +444,13 @@ header {
 .planeTrip {
   width: 100%;
   height: 504px;
-  background-image: url('/images/Brightness-Contrast\ 1.png');
+  background-image: url('/Tourist-Landing-Page/images/Brightness-Contrast\ 1.png');
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
 }
 .planeTrip--inner {
-  background-image: url('/images/bgBlur.png');
+  background-image: url('/Tourist-Landing-Page/images/bgBlur.png');
   position: bottom;
   position: absolute;
   bottom: 0px;
@@ -406,7 +489,7 @@ header {
 .destination {
   width: 100%;
   height: 708px;
-  padding: 64px 184px 0;
+  padding: 64px 92px 0;
 }
 
 .destination--content {
@@ -416,14 +499,14 @@ header {
   justify-content: space-between;
 }
 .destination--content--inner {
-  width: 271px;
+  width: 22%;
   height: 100%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   display: flex;
   position: relative;
 }
 .destination--bg {
-  width: 271px;
+  width: 100%;
   height: 100%;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -433,6 +516,10 @@ header {
     rgba(0, 0, 0, 0.9) 100%
   );
   position: absolute;
+}
+.destination--place--image {
+  width: 100%;
+  height: 100%;
 }
 
 .content--inner {
