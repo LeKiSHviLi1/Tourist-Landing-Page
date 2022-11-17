@@ -36,7 +36,7 @@ header {
 .banner--bg--image {
   width: 100%;
   height: 100%;
-  background-image: url('/Tourist-Landing-Page/images/DiscoverBg.png');
+  background-image: url('../images/DiscoverBg.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 95px;
@@ -136,7 +136,7 @@ header {
 .video--tour {
   width: 100%;
   height: 504px;
-  background-image: url('/Tourist-Landing-Page/images/clipBg.png');
+  background-image: url('../images/clipBg.png');
   background-repeat: no-repeat;
   background-position: 10% 90%;
   background-size: cover;
@@ -331,7 +331,7 @@ header {
 .subscribe {
   width: 100%;
   height: 350px;
-  background-image: url('/Tourist-Landing-Page/images/subscribeBgImage.png');
+  background-image: url('../images/subscribeBgImage.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -444,13 +444,13 @@ header {
 .planeTrip {
   width: 100%;
   height: 504px;
-  background-image: url('/Tourist-Landing-Page/images/Brightness-Contrast\ 1.png');
+  background-image: url('../images/Brightness-Contrast\ 1.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .planeTrip--inner {
-  background-image: url('/Tourist-Landing-Page/images/bgBlur.png');
+  background-image: url('../images/bgBlur.png');
   position: bottom;
   position: absolute;
   bottom: 0px;

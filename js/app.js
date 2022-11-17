@@ -8,19 +8,19 @@ function card() {
   var array = [];
   var el = new myHtmlElement();
   el.title = 'FLIGHT BOOKING';
-  el.img = '/images/flight booking.png';
+  el.img = 'images/flight booking.png';
   el.paragraph =
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.';
   array[0] = el;
   el = new myHtmlElement();
   el.title = 'HOTEL & RESORT BOOKING';
-  el.img = '/images/hotel.png';
+  el.img = 'images/hotel.png';
   el.paragraph =
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.';
   array[1] = el;
   el = new myHtmlElement();
   el.title = 'FAMILY TRIP PLANNER';
-  el.img = '/images/family.png';
+  el.img = 'images/family.png';
   el.paragraph =
     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem.';
   array[2] = el;
