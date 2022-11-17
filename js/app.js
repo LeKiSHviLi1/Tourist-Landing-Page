@@ -63,3 +63,11 @@ function card() {
 }
 
 card();
+
+function menuClick() {
+  let div = document.createElement('div');
+  let nav = document.createElement('nav');
+  for (let i = 0; i < 4; i++) {
+    let a = document.createElement('a');
+  }
+}

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   header {
     height: 64px;
     padding: 0 16px;
@@ -8,6 +8,27 @@
   }
   .burgerMenu {
     display: block;
+  }
+
+  .menu {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px;
+    background-color: #ffffff80;
+  }
+  .menu--nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu--link {
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    color: #303134;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .banner--bg--image {
     padding: 0 16px;
@@ -113,8 +134,10 @@
 
   .package {
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding: 0;
+
     align-items: center;
   }
   .package--container {
@@ -171,6 +194,7 @@
   }
   .coments--inner {
     flex-direction: column;
+    padding: 0 16px 0;
   }
   .coment--container {
     width: 100%;
@@ -205,6 +229,7 @@
   .destination--content {
     flex-direction: column;
     height: auto;
+    padding: 0 16px 0;
   }
   .destination--content--inner {
     width: 100%;
