@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,18 +19,28 @@
   </head>
   <body>
     <header>
-      <div>
+      <nav class="nav--bar">
         <img src="images/Tourism.svg" alt="logo" />
-      </div>
-      <nav>
-        <a class="nav--header" href="#">home</a>
-        <a class="nav--header" href="#">about us</a>
-        <a class="nav--header" href="#">our service</a>
-        <a class="nav--header" href="#">tour package</a>
+        <ul class="nav--menu">
+          <li class="nav--item">
+            <a class="nav--link" href="#">home</a>
+          </li>
+          <li class="nav--item">
+            <a class="nav--link" href="#">about us</a>
+          </li>
+          <li class="nav--item">
+            <a class="nav--link" href="#">our service</a>
+          </li>
+          <li class="nav--item">
+            <a class="nav--link" href="#">tour package</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-      <div class="burgerMenu">
-        <img src="images/burgerMenu.svg" alt="burger icon" />
-      </div>
     </header>
     <section class="banner">
       <div class="banner--bg--image">
@@ -62,7 +71,11 @@
           industry. Lorem Ipsum has been the industry's standard
         </p>
       </div>
-      <div class="service--content" id="serviceContent"></div>
+      <div
+        class="service--content"
+        id="serviceContent"
+        onclick="popUp(this)"
+      ></div>
     </section>
     <section class="video--tour">
       <div class="video--black">
